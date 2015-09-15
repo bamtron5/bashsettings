@@ -25,3 +25,5 @@ alias subl='open -a "Sublime Text 2"'
 
 
 
+
+[ -s "/Users/bmorrison/.dnx/dnvm/dnvm.sh" ] && . "/Users/bmorrison/.dnx/dnvm/dnvm.sh" # Load dnvm
