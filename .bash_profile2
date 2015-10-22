@@ -1,0 +1,38 @@
+echo "
+
+
+hi,
++-+-+-+-+-+-+-+-+
+|b|a|m|t|r|o|n|5|
++-+-+-+-+-+-+-+-+
+
+
+
+"
+
+
+export GITAWAREPROMPT=~/.bash/git-aware-prompt
+source $GITAWAREPROMPT/main.sh
+export PS1="\[\e[00;32m\]\u\[\e[0m\]\[\e[00;37m\]@\h:\[\e[0m\]\[\e[00;36m\][\w]:\[\e[0m\]\[\e[00;37m\] \[\e[0m\]\$git_branch"
+
+alias l="ls -Gal"i
+alias subl='open -a "Sublime Text 2"'
+alias winhd='cd /Users/bmorrison/Desktop/\[C\]\ Windows\ 10'
+alias sleep='/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend'
+alias shutdown='sudo poweroff'
+alias where="mdfind -name '$1'"
+alias matrix='LC_ALL=C tr -c "[:digit:]" " " < /dev/urandom | dd cbs=$COLUMNS conv=unblock | GREP_COLOR="1;32" grep --color "[^ ]"'
+
+
+
+
+[ -s "/Users/bmorrison/.dnx/dnvm/dnvm.sh" ] && . "/Users/bmorrison/.dnx/dnvm/dnvm.sh" # Load dnvm
+
+##
+# Your previous /Users/bmorrison/.bash_profile file was backed up as /Users/bmorrison/.bash_profile.macports-saved_2015-10-06_at_22:34:54
+##
+
+# MacPorts Installer addition on 2015-10-06_at_22:34:54: adding an appropriate PATH variable for use with MacPorts.
+export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+# Finished adapting your PATH environment variable for use with MacPorts.
+
